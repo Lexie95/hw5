@@ -51,7 +51,7 @@ function draw() {
   if(mouseX>=width/2-height/7*2 && mouseX<=width/2+height/7*2 && mouseY>=height/7 && mouseY<=height/7+height/7*4) {
     textFont('Garamond');
     textAlign(CENTER);
-    textSize(16);
+    textSize(14);
     noStroke();
     fill("#FDC920");
     text("Croatian Rhapsody",width/2.1,height/1.6);
