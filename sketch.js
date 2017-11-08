@@ -17,22 +17,8 @@ function setup() {
 }
 
 function draw() {
-    // Get the average (root mean square) amplitude
   var rms = analyzer.getLevel();
-  
-  
-  
-  var dim= map(vol,0,1,width/10,width/2);
-  push();
-  for(var x=0; x<width; x=x+width/20){
-  strokeWeight(3);
-  stroke(255);
-  line(x,0,x,height);
-  }
-  pop();
-  
-  
-  
+
   if(mySong.isPlaying() === true) {
     background(0,0,225);
     
@@ -48,7 +34,7 @@ function draw() {
     angleMode(DEGREES);
     noFill();
     stroke("#FEB7E2");
-    strokeWeight(20);
+    strokeWeight(15);
     rect(width/4-10,height/4-10,width/2,height/2)
     push();
     fill("#FDC920");
