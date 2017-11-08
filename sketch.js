@@ -23,7 +23,7 @@ function draw() {
     background(0,0,225);
     
     var vol = analyzer.getLevel();
-    image(myImg,width/4-2,height/4-2,vol*1000,vol*600);
+    image(myImg,width/4-2,height/4-2,vol*800,vol*500);
     noStroke();
     fill("#FEB7E2");
     ellipse(random(0,width),random(0,height),vol*100);
