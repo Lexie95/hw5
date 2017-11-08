@@ -34,24 +34,28 @@ function draw() {
     angleMode(DEGREES);
     noFill();
     stroke("#FEB7E2");
-    strokeWeight(16);
+    strokeWeight(10);
     rect(width/4-10,height/4-10,width/2,height/2)
     push();
-    fill("#FDC920");
+    fill(0,0,255);
     ellipse(width/4-10,height/4-10,vol*200)
+    fill("#FEB7E2");
+    ellipse(width/4-10,height/4-10,16)
     pop();
     strokeWeight(2);
     rect(random(0,width),random(0,height),vol*300,vol*100)
+    fill(0,0,255);
+    ellipse(width/4-10,height/4-10,vol*100)
   }
   
   if(mouseX>=width/2-height/7*2 && mouseX<=width/2+height/7*2 && mouseY>=height/7 && mouseY<=height/7+height/7*4) {
     textFont('Garamond');
     textAlign(CENTER);
-    textSize(18);
+    textSize(16);
     noStroke();
     fill("#FDC920");
-    text("Croatian Rhapsody",width/2,height/1.5-30);
-    text("Maksim Mrvica",width/2,height/1.5);
+    text("Croatian Rhapsody",width/2.1,height/1.6);
+    text("Maksim Mrvica",width/2.1,height/1.5);
   }
 }
 
