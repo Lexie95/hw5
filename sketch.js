@@ -23,7 +23,7 @@ function draw() {
     background(0,0,225);
     
     var vol = analyzer.getLevel();
-    image(myImg,width/4,height/4,vol*1000,vol*600);
+    image(myImg,width/4-2,height/4-2,vol*1000,vol*600);
     noStroke();
     fill("#FEB7E2");
     ellipse(random(0,width),random(0,height),vol*100);
@@ -34,7 +34,7 @@ function draw() {
     angleMode(DEGREES);
     noFill();
     stroke("#FEB7E2");
-    strokeWeight(15);
+    strokeWeight(16);
     rect(width/4-10,height/4-10,width/2,height/2)
     push();
     fill("#FDC920");
